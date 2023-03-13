@@ -1,0 +1,2 @@
+ #!/bin/bash
+ echo 'foo bar baz' | cut --delimiter=' ' --fields=3
