@@ -1,0 +1,4 @@
+#!/bin/bash
+systemctl status nginx || sudo systemctl start nginx
+curl 0:80
+echo "Nginx status: $(systemctl status nginx)"
