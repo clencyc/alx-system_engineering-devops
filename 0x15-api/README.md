@@ -9,7 +9,8 @@
 
 4. https://smartbear.com/learn/api-design/microservices/
 
-
 5. https://www.sitepoint.com/rest-api/
 
 6. https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/
+
+7. https://pep8.org/#code-lay-out
