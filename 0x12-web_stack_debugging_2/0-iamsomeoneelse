@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Runs whoami comd as the user provided in argum
+    if [ $# -ne 1 ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+    fi
+
+    # Get the username argument
+    username="$1"
+
+    # Try running whoami as the specified user
+    sudo -n whoami -u "$username"
+
+    # Check the exit code of the previous command (sudo)
+    if [ $? -eq 0 ]; then
+    echo "Successfully ran whoami as $username"
+    else
+    echo "Error: Failed to run whoami as $username"
+    # Optionally, you can display the specific error code using:
+    # echo "Exit code: $?"
+    fi
